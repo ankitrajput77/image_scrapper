@@ -21,7 +21,7 @@ Before running the script, ensure you have the following prerequisites installed
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/google-image-scraper.git
+git clone [https://github.com/your-username/google-image-scraper.git](https://github.com/ankitrajput77/image_scrapper.git)
 ```
 
 2. Navigate to the project directory:

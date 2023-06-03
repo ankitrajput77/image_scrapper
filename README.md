@@ -34,6 +34,12 @@ pip install -r requirements.txt
 
 python app.py
 
+## inaction screenshots 
+
+<img width="960" alt="Screenshot 2023-06-03 195058" src="https://github.com/ankitrajput77/image_scrapper/assets/113281225/f7496958-5fe8-4e63-b003-b68a19a6696a">
+<img width="947" alt="Screenshot 2023-06-03 195114" src="https://github.com/ankitrajput77/image_scrapper/assets/113281225/bb84b5da-d7ac-402d-839a-80600dcd27a5">
+
+
 ## Contributing
 Contributions are welcome! If you find any issues or want to add new features, please open an issue or submit a pull request. Make sure to follow the existing coding style and provide appropriate documentation.
 

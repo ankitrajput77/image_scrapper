@@ -1,7 +1,7 @@
 # Google Image Scraper
 
 This is a Python script that allows you to scrape images from Google search using keywords. It utilizes the BeautifulSoup library for web scraping and the requests library for making HTTP requests.
-Images are stored in mongodb.
+Images are stored in mongoDB and in directory named as scrapped_images.
 
 ## Table of Contents
 

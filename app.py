@@ -34,7 +34,7 @@ def index():
             del images_link_list[0]
 
             img_list =[]
-
+            img_url_list = []
             for index,image_tag in enumerate(images_link_list):
                 image_url = image_tag['src']
                 image_data = requests.get(image_url).content
@@ -42,6 +42,8 @@ def index():
                 img_list.append(mydict)
                 with open(os.path.join(images_dir, f"{search}_{images_link_list.index(image_tag)}.jpg"), "wb") as fp:
                     fp.write(image_data)
+                    img_url_list.append(image_url)
+                    
             
             # mongodb insert
             client = pymongo.MongoClient("mongodb+srv://rajput89207:rajput89207@cluster0.q4cidjn.mongodb.net/?retryWrites=true&w=majority")
@@ -49,7 +51,7 @@ def index():
             review_col = db['images']
             review_col.insert_many(img_list)
 
-            return "Success"
+            return render_template('result.html', Images = img_url_list)
         except Exception as ep:
             logging.info(ep)
             return "error, try again"
@@ -62,3 +64,4 @@ def index():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8000)
+
